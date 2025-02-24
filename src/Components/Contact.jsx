@@ -23,9 +23,11 @@ const Contact = () => {
           <div className="w-full flex flex-col items-start">
             <div className='flex w-full justify-between items-start mb-10 flex-wrap'>
               <div className='w-full md:w-[45%]'>
-                <h1 className='text-[45px] font-ebgaramond italic font-bold'>
-                  Innovation Begins with a <br /> <span className='ml-14'> Conversation!</span>
-                </h1>
+              <h1 className='text-[30px] sm:text-[45px] font-ebgaramond italic font-bold'>
+                Innovation Begins with a <br /> 
+                <span className='sm:ml-14 ml-8'> Conversation!</span>
+              </h1>
+
                 <div className='mt-10 space-y-4'>
                   {faqs.map((faq, index) => (
                     <div key={index} className="border-b border-gray-300 py-2">

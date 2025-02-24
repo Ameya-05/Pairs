@@ -17,7 +17,7 @@ const Services = () => {
         <div className="w-2/3 flex flex-col md:flex-row items-center md:items-start">
             <div className="md:w-2/3">
             <p className="text-lg mr-6 font-ebgaramond text-gray-700 leading-relaxed">
-            Dr Astan harnesses AI-driven analytics and automation to enhance efficiency, reduce risks, and optimize decision-making. It seamlessly integrates with your existing systems, providing real-time insights tailored to your industry. With an intuitive interface and robust security, it ensures ease of use while protecting your data. Whether improving operations or driving innovation, Dr Astan adapts to your needs for measurable impact.
+            Our flagship solution, dr Astan, combines advanced AI with deep industry expertise to drive smarter decision-making and operational efficiency. It’s designed to empower your business with cutting-edge technology and insights.
             </p>
             <div className="mt-6 flex items-center space-x-16 border-black border-b pb-1 w-fit cursor-pointer overflow-hidden group">
                 <span className="text-lg font-medium relative inline-block transition-all duration-300 group-hover:-translate-y-1 group-hover:delay-0 group-hover:ease-out">Learn more</span>

@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { motion, AnimatePresence } from "framer-motion";
-import pairs from "../images/pairs.png"; 
+import pairs from "../images/pairs.png";
 
 const Lotus3D = ({ textureUrl }) => {
   const meshRef = useRef();
@@ -18,13 +18,25 @@ const Lotus3D = ({ textureUrl }) => {
       targetRotation.current.x = newY;
       targetRotation.current.y = newX;
 
-      meshRef.current.rotation.y = THREE.MathUtils.lerp(meshRef.current.rotation.y, targetRotation.current.y, 0.03);
-      meshRef.current.rotation.x = THREE.MathUtils.lerp(meshRef.current.rotation.x, targetRotation.current.x, 0.03);
+      meshRef.current.rotation.y = THREE.MathUtils.lerp(
+        meshRef.current.rotation.y,
+        targetRotation.current.y,
+        0.03
+      );
+      meshRef.current.rotation.x = THREE.MathUtils.lerp(
+        meshRef.current.rotation.x,
+        targetRotation.current.x,
+        0.03
+      );
     }
   });
 
   return (
-    <mesh ref={meshRef} scale={[2.2, 2.2, 2.2]} position={[0, 0.5, 0]}>
+    <mesh 
+      ref={meshRef} 
+      scale={window.innerWidth < 768 ? [1.2, 1.2, 1.2] : [2.2, 2.2, 2.2]} 
+      position={[0, 0.5, 0]}
+    >
       <planeGeometry args={[3, 3]} />
       <meshStandardMaterial map={texture} side={THREE.DoubleSide} transparent />
     </mesh>
@@ -80,7 +92,7 @@ const LotusScene = () => {
       <AnimatePresence>
         <motion.h1
           key={text.topLeft}
-          className="absolute italic top-8 left-8 md:top-20 md:left-16 text-white text-lg md:text-2xl font-bold font-mono"
+          className="absolute italic top-4 left-4 md:top-20 md:left-16 text-white text-xs md:text-2xl font-bold font-mono"
           variants={textVariants}
           initial="hidden"
           animate="visible"
@@ -93,7 +105,7 @@ const LotusScene = () => {
       <AnimatePresence>
         <motion.h1
           key={text.topRight}
-          className="absolute tracking-tighter top-8 right-8 md:top-16 md:right-20 text-white text-lg md:text-2xl font-semibold font-mono"
+          className="absolute tracking-tighter top-4 right-4 md:top-16 md:right-20 text-white text-xs md:text-2xl font-semibold font-mono"
           variants={textVariants}
           initial="hidden"
           animate="visible"
@@ -106,7 +118,7 @@ const LotusScene = () => {
       <AnimatePresence>
         <motion.h1
           key={text.bottomLeft}
-          className="absolute bottom-8 left-8 md:bottom-28 md:left-40 text-white text-lg md:text-2xl font-semibold font-mono"
+          className="absolute bottom-4 left-4 md:bottom-28 md:left-40 text-white text-xs md:text-2xl font-semibold font-mono"
           variants={textVariants}
           initial="hidden"
           animate="visible"
@@ -119,7 +131,7 @@ const LotusScene = () => {
       <AnimatePresence>
         <motion.h1
           key={text.bottomRight}
-          className="absolute bottom-8 right-8 md:bottom-28 md:right-40 text-white text-lg md:text-2xl font-semibold font-mono"
+          className="absolute bottom-4 right-4 md:bottom-28 md:right-40 text-white text-xs md:text-2xl font-semibold font-mono"
           variants={textVariants}
           initial="hidden"
           animate="visible"
