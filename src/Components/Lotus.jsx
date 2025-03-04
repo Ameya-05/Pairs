@@ -92,7 +92,7 @@ const LotusScene = () => {
       <AnimatePresence>
         <motion.h1
           key={text.topLeft}
-          className="absolute italic top-4 left-4 md:top-20 md:left-16 text-white text-xs md:text-2xl font-bold font-mono"
+          className="absolute italic top-14 left-4 md:top-20 md:left-16 text-white text-xs md:text-2xl font-bold font-mono"
           variants={textVariants}
           initial="hidden"
           animate="visible"
@@ -105,7 +105,7 @@ const LotusScene = () => {
       <AnimatePresence>
         <motion.h1
           key={text.topRight}
-          className="absolute tracking-tighter top-10 right-4 md:top-16 md:right-20 text-white text-xs md:text-2xl font-semibold font-mono"
+          className="absolute tracking-tighter top-28 right-4 md:top-16 md:right-20 text-white text-xs md:text-2xl font-semibold font-mono"
           variants={textVariants}
           initial="hidden"
           animate="visible"
@@ -118,7 +118,7 @@ const LotusScene = () => {
       <AnimatePresence>
         <motion.h1
           key={text.bottomLeft}
-          className="absolute bottom-4 left-4 md:bottom-28 md:left-40 text-white text-xs md:text-2xl font-semibold font-mono"
+          className="absolute bottom-32 left-4 md:bottom-28 md:left-40 text-white text-xs md:text-2xl font-semibold font-mono"
           variants={textVariants}
           initial="hidden"
           animate="visible"
@@ -131,7 +131,7 @@ const LotusScene = () => {
       <AnimatePresence>
         <motion.h1
           key={text.bottomRight}
-          className="absolute bottom-4 right-4 md:bottom-28 md:right-40 text-white text-xs md:text-2xl font-semibold font-mono"
+          className="absolute bottom-36 right-4 md:bottom-28 md:right-40 text-white text-xs md:text-2xl font-semibold font-mono"
           variants={textVariants}
           initial="hidden"
           animate="visible"
