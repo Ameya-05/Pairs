@@ -43,7 +43,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className='relative w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0'>
-                <div className='absolute inset-x-1/2 inset-y-[95px] w-[350px] h-full bg-cover bg-center' style={{ backgroundImage: `url(${contact1})`, opacity: 100 }}></div>
+                <div className='absolute inset-x-1/2 inset-y-[95px] md:w-[350px] h-full bg-cover bg-center' style={{ backgroundImage: `url(${contact1})`, opacity: 100 }}></div>
                 <div className="relative bg-transparent p-4 w-full max-w-xl">
                   <div className="bg-white bg-opacity-10 p-10 rounded-lg shadow-2xl shadow-gray-300 backdrop-blur-sm">
                     <form className="space-y-6">

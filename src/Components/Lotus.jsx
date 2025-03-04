@@ -105,7 +105,7 @@ const LotusScene = () => {
       <AnimatePresence>
         <motion.h1
           key={text.topRight}
-          className="absolute tracking-tighter top-4 right-4 md:top-16 md:right-20 text-white text-xs md:text-2xl font-semibold font-mono"
+          className="absolute tracking-tighter top-10 right-4 md:top-16 md:right-20 text-white text-xs md:text-2xl font-semibold font-mono"
           variants={textVariants}
           initial="hidden"
           animate="visible"
